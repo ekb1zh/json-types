@@ -1,0 +1,29 @@
+{
+  "name": "@tools/json-types",
+  "version": "1.0.0",
+  "description": "JSON data types definition",
+  "keywords": [
+    "json",
+    "type",
+    "types"
+  ],
+  "homepage": "https://github.com/ekb1zh/json-types",
+  "bugs": {
+    "url": "https://github.com/ekb1zh/json-types/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "ekb1zh",
+    "email": "ekb1zh@gmail.com",
+    "url": "https://github.com/ekb1zh"
+  },
+  "main": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ekb1zh/json-types.git"
+  },
+  "scripts": {},
+  "devDependencies": {
+    "typescript": ">=3.7.0"
+  }
+}
