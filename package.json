@@ -7,7 +7,7 @@
     "type",
     "types"
   ],
-  "homepage": "https://github.com/ekb1zh/json-types",
+  "homepage": "https://github.com/ekb1zh/json-types#readme",
   "bugs": {
     "url": "https://github.com/ekb1zh/json-types/issues"
   },
@@ -20,9 +20,8 @@
   "main": "index.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ekb1zh/json-types.git"
+    "url": "git+https://github.com/ekb1zh/json-types.git"
   },
-  "scripts": {},
   "devDependencies": {
     "typescript": ">=3.7.0"
   }
