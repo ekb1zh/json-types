@@ -17,12 +17,50 @@
     "email": "ekb1zh@gmail.com",
     "url": "https://github.com/ekb1zh"
   },
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ekb1zh/json-types.git"
+    "url": "https://github.com/ekb1zh/json-types.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build && husky install",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
   },
   "devDependencies": {
-    "typescript": ">=3.7.0"
-  }
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.2",
+    "size-limit": "^7.0.8",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.1",
+    "typescript": "^3.9.10"
+  },
+  "size-limit": [
+    {
+      "path": "dist/index.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/index.esm.js",
+      "limit": "10 KB"
+    }
+  ]
 }
