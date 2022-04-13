@@ -1,4 +1,4 @@
-# JSON data types definition
+## JSON data types definition
 
 ### Install
 
