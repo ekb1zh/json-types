@@ -18,8 +18,8 @@
     "url": "https://github.com/ekb1zh"
   },
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
+  "module": "dist/json-types.esm.js",
   "files": [
     "dist",
     "src"
@@ -55,11 +55,11 @@
   },
   "size-limit": [
     {
-      "path": "dist/index.cjs.production.min.js",
+      "path": "dist/json-types.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/index.esm.js",
+      "path": "dist/json-types.esm.js",
       "limit": "10 KB"
     }
   ]
