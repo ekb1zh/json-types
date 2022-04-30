@@ -56,11 +56,11 @@
   "size-limit": [
     {
       "path": "dist/json-types.cjs.production.min.js",
-      "limit": "10 KB"
+      "limit": "1 KB"
     },
     {
       "path": "dist/json-types.esm.js",
-      "limit": "10 KB"
+      "limit": "1 KB"
     }
   ]
 }
