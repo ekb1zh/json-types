@@ -6,6 +6,7 @@ test('types', () => {
   const number: JsonPrimitive = 0
   const string: JsonPrimitive = ''
 
+  const jsonArrayEmpty: JsonArray = []
   const jsonArray: JsonArray = [
     null,
     false,
@@ -15,6 +16,7 @@ test('types', () => {
     [{ nul, boolean, number, string }],
   ]
 
+  const jsonObjectEmpty: JsonObject = {}
   const jsonObject: JsonObject = {
     null: null,
     boolean: false,
@@ -26,15 +28,19 @@ test('types', () => {
   const json2: Json = false
   const json3: Json = 0
   const json4: Json = ''
-  const json5: Json = { nul, boolean, number, string }
-  const json6: Json = [{ nul, boolean, number, string }]
+  const json5: Json = { jsonArray, jsonArrayEmpty, jsonObject, jsonObjectEmpty }
+  const json6: Json = [
+    { jsonArray, jsonArrayEmpty, jsonObject, jsonObjectEmpty },
+  ]
 
-  console.log({
+  const json: Json = {
     nul,
     boolean,
     number,
     string,
+    jsonArrayEmpty,
     jsonArray,
+    jsonObjectEmpty,
     jsonObject,
     json1,
     json2,
@@ -42,5 +48,7 @@ test('types', () => {
     json4,
     json5,
     json6,
-  })
+  }
+
+  console.log(json)
 })
