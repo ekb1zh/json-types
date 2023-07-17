@@ -9,7 +9,7 @@ npm i -D @ekb1zh/json-types
 ### Using
 
 ```ts
-import * as Json from '@ekb1zh/json-types'
+import type * as Json from '@ekb1zh/json-types'
 
 const jsonObject: Json.Object = {
   // your properties

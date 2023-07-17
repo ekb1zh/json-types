@@ -1,4 +1,4 @@
-import * as Json from '../dist'
+import type * as Json from '../dist'
 
 test('types', () => {
   const nul: Json.Primitive = null
