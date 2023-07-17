@@ -1,13 +1,13 @@
-import { JsonPrimitive, JsonArray, JsonObject, Json } from '../dist'
+import * as Json from '../dist'
 
 test('types', () => {
-  const nul: JsonPrimitive = null
-  const boolean: JsonPrimitive = false
-  const number: JsonPrimitive = 0
-  const string: JsonPrimitive = ''
+  const nul: Json.Primitive = null
+  const boolean: Json.Primitive = false
+  const number: Json.Primitive = 0
+  const string: Json.Primitive = ''
 
-  const jsonArrayEmpty: JsonArray = []
-  const jsonArray: JsonArray = [
+  const jsonArrayEmpty: Json.Array = []
+  const jsonArray: Json.Array = [
     null,
     false,
     0,
@@ -16,24 +16,29 @@ test('types', () => {
     [{ nul, boolean, number, string }],
   ]
 
-  const jsonObjectEmpty: JsonObject = {}
-  const jsonObject: JsonObject = {
+  const jsonObjectEmpty: Json.Object = {}
+  const jsonObject: Json.Object = {
     null: null,
     boolean: false,
     number: 0,
     string: '',
   }
 
-  const json1: Json = null
-  const json2: Json = false
-  const json3: Json = 0
-  const json4: Json = ''
-  const json5: Json = { jsonArray, jsonArrayEmpty, jsonObject, jsonObjectEmpty }
-  const json6: Json = [
+  const json1: Json.Value = null
+  const json2: Json.Value = false
+  const json3: Json.Value = 0
+  const json4: Json.Value = ''
+  const json5: Json.Value = {
+    jsonArray,
+    jsonArrayEmpty,
+    jsonObject,
+    jsonObjectEmpty,
+  }
+  const json6: Json.Value = [
     { jsonArray, jsonArrayEmpty, jsonObject, jsonObjectEmpty },
   ]
 
-  const json: Json = {
+  const json: Json.Value = {
     nul,
     boolean,
     number,

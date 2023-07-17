@@ -1,6 +1,6 @@
-export type Json = JsonPrimitive | JsonArray | JsonObject
-export type JsonPrimitive = null | boolean | number | string
-export type JsonArray = Json[]
-export type JsonObject = {
-  [key: string]: Json
+export type Value = Primitive | Array | Object
+export type Primitive = null | boolean | number | string
+export type Array = Value[]
+export type Object = {
+  [key: string]: Value
 }
